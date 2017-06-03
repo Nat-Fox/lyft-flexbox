@@ -20,17 +20,16 @@ body {
     z-index: 1;
 }
 
-.left-part {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 20px;
+.logo-container {
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .right-part {
     display: flex;
     margin-top: -70px;
     justify-content: flex-end;
-    margin-right: 140px;
+    margin-right: 40px;
 }
 
 ul li {
@@ -46,6 +45,7 @@ ul li a {
     color: white;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .logo {
@@ -54,14 +54,18 @@ ul li a {
     margin-top: 10px;
 }
 
+ul li a:hover {
+    color: #FF00BF;
+}
+
 
 /*Estilos para el boton de login*/
 
-.button-login {
-    padding: 10px 15px;
+.button-nav {
+    padding: 9px 18px;
     border-radius: 10%;
-    width: 60px;
-    height: 20px;
+    width: 61px;
+    height: 18px;
     border: 2px solid white;
     text-align: center;
     display: inline-block;
@@ -84,4 +88,36 @@ ul li a {
     position: relative;
     top: 30px;
     width: 100%
+}
+
+
+/* Estilos para el cambio de navbar y el nuevo boton */
+
+.navbar-color {
+    width: 100%;
+    height: 78px;
+    background: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-color .right-part ul li a {
+    color: black;
+}
+
+.navbar-color .right-part .button-nav {
+    padding: 9px 18px;
+    border-radius: 10%;
+    width: 61px;
+    height: 18px;
+    border: 2px solid black;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.second-apar {
+    visibility: hidden;
 }
