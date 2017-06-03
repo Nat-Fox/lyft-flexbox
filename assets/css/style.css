@@ -1,0 +1,87 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Contenedor Flexbox */
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: linear-gradient(#76278f, #2B1E66);
+    width: 100%;
+    height: 65px;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.left-part {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.right-part {
+    display: flex;
+    margin-top: -70px;
+    justify-content: flex-end;
+    margin-right: 140px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+/*Quitando los estilos <a>*/
+
+ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.logo {
+    width: 60px;
+    height: 43px;
+    margin-top: 10px;
+}
+
+
+/*Estilos para el boton de login*/
+
+.button-login {
+    padding: 10px 15px;
+    border-radius: 10%;
+    width: 60px;
+    height: 20px;
+    border: 2px solid white;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/*Estilos para el video del home*/
+
+.video-home {
+    max-width: 100%;
+    height: 100%;
+}
+
+.video-container {
+    overflow: hidden;
+}
+
+.video-container video {
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+    width: 100%
+}
