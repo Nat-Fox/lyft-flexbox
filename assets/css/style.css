@@ -213,7 +213,10 @@ input[type=text] {
 }
 
 
-/* Estilos para el primer video */
+/* Estilos para el primer y segundo video */
+
+
+/* Flex box en común para todos */
 
 .container-video {
     display: flex;
@@ -266,4 +269,81 @@ input[type=text] {
 
 .right span {
     font-size: 16px;
+}
+
+
+/* Estilos para el footer */
+
+.footer-ini {
+    display: flex;
+    background-color: #323345;
+    color: white
+}
+
+.footer-ini div {
+    margin-left: 100px;
+    margin-right: 30px;
+}
+
+.app-store svg,
+.app-store img {
+    cursor: pointer;
+}
+
+.app-store {
+    margin-top: 50px;
+}
+
+.app-store svg {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.app-store img {
+    width: 135px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.links:hover {
+    cursor: pointer;
+    color: #FF00BF;
+}
+
+.links {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.line {
+    border: 1px solid white;
+    width: 50%;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.icon {
+    margin-right: 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.social-wrapper {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    text-align: center;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #323345;
+    color: white;
 }
