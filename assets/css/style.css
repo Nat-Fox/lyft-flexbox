@@ -9,7 +9,8 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(#76278f, #2B1E66);
+    background-color: rgba(#76278f, 255, 255, 0.5);
+    /*background: linear-gradient(#76278f, #2B1E66);*/
     width: 100%;
     height: 65px;
     padding: 20px;
@@ -84,7 +85,9 @@ ul li a:hover {
     max-width: 100%;
     position: relative;
     top: 30px;
-    width: 100%
+    width: 100%;
+    background: linear-gradient(#76278f, #2B1E66);
+    margin-top: -30px;
 }
 
 
@@ -130,6 +133,19 @@ ul li a:hover {
     background-color: #EDE9E2;
     width: 436px;
     height: 320px;
+    top: 200px;
+    right: 0;
+    color: #352384;
+    padding: 30px;
+}
+
+.extended-card {
+    flex-direction: column;
+    position: absolute;
+    overflow: auto;
+    background-color: #EDE9E2;
+    width: 436px;
+    height: 500px;
     top: 200px;
     right: 0;
     color: #352384;
@@ -346,4 +362,14 @@ footer {
     padding: 30px;
     background-color: #323345;
     color: white;
+}
+
+input[type=text].invalid-input {
+    background: url(../img/error.png) no-repeat scroll 7px 7px;
+    background-position-x: 350px;
+    border-bottom: 2px solid red;
+}
+
+.ocultar-input {
+    display: none;
 }

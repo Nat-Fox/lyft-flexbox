@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Lyft</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico">
     <!-- Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Google Font Montserrat-->
@@ -39,14 +41,18 @@
         </div>
     </section>
 
-    <!-- Card de registro -->
-    <div class="container">
+    <!-- Card de registro inicial -->
+    <div class="container" id="container">
         <h2>TURN MILES </h2>
         <h2 class="title-card">INTO MONAY</h2>
         <h5>SIGN UP TO DRIVE WITH LYFT.</h5>
-        <input type="text" name="" value="" placeholder="Phone Number">
+        <input id="phone-number" class="phone-number" type="text" placeholder="Phone Number">
+        <!-- Los tres input siguientes parten ocultos -->
+        <input class="ocultar-input" id="name" type="text" placeholder="Name">
+        <input class="ocultar-input" id="email" type="text" placeholder="Email">
+        <input class="ocultar-input" id="city" type="text" placeholder="City">
         <div class="container-btn">
-            <button class="btn-become" type="button">Become a driver</button>
+            <button id="btn-become" class="btn-become" type="button">Become a driver</button>
             <a href="#" class="link">Sign up to ride</a>
         </div>
 
@@ -59,6 +65,30 @@
             </p>
         </div>
     </div>
+
+    <!-- Card de registro extendida -->
+    <!--<div class="container extended-card">
+        <h2>TURN MILES </h2>
+        <h2 class="title-card">INTO MONAY</h2>
+        <h5>SIGN UP TO DRIVE WITH LYFT.</h5>
+        <input id="phone-number" type="text" placeholder="Phone Number">
+        <input id="name" type="text" placeholder="Name">
+        <input id="email" type="text" placeholder="Email">
+        <input id="city" type="text" placeholder="City">
+        <div class="container-btn">
+            <button id="btn-become" class="btn-become" type="button">Become a driver</button>
+            <a href="#" class="link">Sign up to ride</a>
+        </div>
+
+        <div class="text-card">
+            <p>
+                Already applied? Check the status of your application here.
+            </p>
+            <p>
+                Earn money for inviting friends to drive. Learn more.
+            </p>
+        </div>
+    </div>-->
 
     <!-- Sección info-1 -->
     <section class="info-1">
@@ -88,14 +118,14 @@
             <span>Lyft's new emblem, Amp, is the secret to smoot pickups. Lighting up dashboards nationwide, the device makes it easy for passengers and drivers to find each other.</span>
         </div>
         <div class="container-video">
-            <iframe class="video-uno" width="560" height="315" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>
+            <!--<iframe class="video-uno" width="560" height="315" src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>-->
         </div>
     </section>
 
     <!-- Sección video 2 -->
     <section class="container-video">
         <div class="container-video">
-            <iframe class="video-dos" width="560" height="315" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
+            <!--<iframe class="video-dos" width="560" height="315" src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>-->
         </div>
         <div class="right">
             <p>WATCH</p>
@@ -112,7 +142,7 @@
             <span>Launching on TV and online, "Ride on the Bright Side" shows how lyft continues to prioritize happy drivers, short ETAs, and safety.</span>
         </div>
         <div class="container-video">
-            <iframe class="video-uno" width="560" height="315" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>
+            <!--<iframe class="video-uno" width="560" height="315" src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>-->
         </div>
     </section>
 
